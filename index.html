@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Contact List</h1>
+
+    <div id="input-form">
+        <input type="text" id="name" placeholder="Contact Name" required>
+        <input type="tel" id="number" placeholder="Contact Number" required>
+        <input type="text" id="address" placeholder="Address or Other Info">
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <div id="search-form">
+        <input type="text" id="search" placeholder="Search by Name or Number">
+        <button onclick="searchContactNonRealtime()">Search</button>
+    </div>
+
+    <div id="search-result">
+        <!-- Search results will be displayed here -->
+    </div>
+
+    <table id="contact-table">
+        <thead>
+            <tr>
+                <th>SL</th>
+                <th>Contact Name</th>
+                <th>Contact Number</th>
+                <th>Address or Other Info</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="contact-list">
+            <!-- Contact information will be displayed here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
